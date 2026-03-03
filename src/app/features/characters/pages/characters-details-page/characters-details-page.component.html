@@ -1,0 +1,36 @@
+<h1>Rick and Morty api</h1>
+<div class="w-screen h-screen flex flex-col justify-center align-middle items-center ">
+    <div class="w-[200px] flex justify-center items-center">
+        <img [src]="character().image" [alt]="character().name">
+
+    </div>
+    <div>
+        <div class="flex gap-2">
+            <h3>Nombre:</h3>
+            <p>{{character().name}}</p>
+        </div>
+        <div class="flex gap-2">
+            <h3>Genero:</h3>
+            <p>{{character().gender}}</p>
+        </div>
+
+        <div class="flex gap-2">
+            <h3>locacion url:</h3>
+            {{character().location.url}}
+        </div>
+        <div class="flex gap-2">
+            <h3>Status:</h3>
+            {{character().status}}
+        </div>
+        <div class="flex gap-2">
+            <h3>origen Url:</h3>
+            {{character().origin.url}}
+        </div>
+        {{character().location.name}}
+
+        
+
+
+
+    </div>
+</div>
